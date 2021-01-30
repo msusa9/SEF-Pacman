@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminPageController">
+   <children>
+      <Label layoutX="218.0" layoutY="14.0" text="Admin Page" />
+      <TableView fx:id="tblTable" layoutX="9.0" layoutY="42.0" prefHeight="421.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="colUsername" onEditCommit="#changedUsernameCellEvent" prefWidth="222.4000301361084" text="Username" />
+          <TableColumn fx:id="colPassword" onEditCommit="#changedPasswordCellEvent" prefWidth="258.39996337890625" text="Password" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExit" layoutX="6.0" layoutY="470.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="26.0" prefWidth="489.0" text="Exit" />
+   </children>
+</AnchorPane>
